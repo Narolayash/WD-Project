@@ -17,116 +17,169 @@
         background-color: #fbe8e0;
         /* background-image: linear-gradient(orangered,white,green); */
         padding: 15px;
-        /* font-size: large; */
         font-family: 'Poppins',sans-serif;  
     }
-    h1,h2,h3{
-        font-size: xx-large;
-        font-family: 'Josefin Slab',sans-serif;
+    header{
+        font-size: x-large;
+        font-family: 'Josefin Slab',snan-serif;
+    }
+    .topic{
+        color: orangered;
+        /* text-decoration:double; */
+    }
+    .section{
+        padding-left: 1%;
+        padding-right: 1%;
     }
     mark{
         background-color: brown;
         padding: 5px 10px;
         color: burlywood;
     }
-    nav{
+
+    .nav{
         background-color: #fbf5ef;
-        position: sticky;
     }
     .navi{
         text-decoration: none;
         margin-left: 170px;
     }
-    a:link{
+    nav a:link{
         color: black;
     }
-    a:visited{
+    nav a:visited{
         color: rgb(248, 151, 96);
         background-color: transparent;
     }
-    a:hover{
-        font-size: 30px;
+    nav a:hover{
+        font-size: 24px;
         color: orangered;
-        transition: 0.5s;
-        text-decoration: underline;
+        transition: 1s;
+        /* text-decoration: underline; */    
     }
-    a:active{
+    nav a:active{
         color: green;
     }
-    h2{
+
+    .footer{
+        /* border: 1px solid red; */
+        text-align: center;
+        color: white;
+        background-color: rgb(44, 38, 34) ;
+        opacity: 0.7;
+        height: 150px;
+        line-height: 2.5;
+        /* background-color: black; */
+    }
+    footer a{
+        text-decoration: none;
+    }
+    footer a:link{
+        color: black;
+    }
+    footer a:visited{
+        color: rgb(248, 151, 96);
+        background-color: transparent;
+    }
+    footer a:hover{
+        font-size: 20px;
         color: orangered;
+        transition: 1s;
+        /* text-decoration: underline; */    
+    }
+    footer a:active{
+        color: green;
     }
 </style>
 <body>
-    <h1 style="text-align: center;">Welcome to <mark>Incredible India!</mark></h1>
-    <h3 style="text-align: center; "><q>Discover the diversity, beauty, and rich heritags of India!</q></h3>
-    <nav>
-        <ul>
-            <a class="navi" href="./index.html" target="_self"><b>Home</b></a>
-            <a class="navi" href="./Culture.html" target="_self"><i>Culture</i></a>
-            <a class="navi" href="./landmark.html" target="_self">Landmarks</a>
-            <a class="navi" href="./cuisine.html" target="_self">Cuisine</a>
-            <a class="navi" href="./Contact Us.html" target="_self">Contact Us</a>
+    <header class="header">
+        <h1 style="text-align: center;">Welcome to <mark>Incredible India!</mark></h1>
+        <h3 style="text-align: center; "><q>Discover the diversity, beauty, and rich heritags of India!</q></h3>
+    </header>
+
+    <nav class="nav">
+        <ul style="list-style-type: none; display:flex;">
+            <li><a class="navi" href="./index.html" target="_self"><b>Home</b></a></li>
+            <li><a class="navi" href="./Culture.html" target="_self"><i>Culture</i></a></li>
+            <li><a class="navi" href="./landmark.html" target="_self">Landmarks</a></li>
+            <li><a class="navi" href="./cuisine.html" target="_self">Cuisine</a></li>
+            <li><a class="navi" href="./Contact Us.html" target="_self">Contact Us</a></li>
         </ul>
     </nav>
-    <h2>About India</h2>
-    <p>India is a land of incredible diversity. From the snow-capped peaks of the <em>Himalayas</em> to the serene backwaters of Kerala, every corner of India tells a unique story. India is the <strong>second-most populous coutry</strong> in the world and boasts a history spanning thousands of years. Its rich traditions have left an indelible mark on the world.</p>
-    <figure>
-        <img src="https://t4.ftcdn.net/jpg/01/14/62/33/360_F_114623372_ZUIjiBqg3GGiTkkvFzAk4GJ0zpqliJE7.jpg" title="India" alt="Map of India" width="300" height="200"> 
-        <figcaption>India: A land of caltural and geographical diversity</figcaption><br>
-        <figcaption><q>Unity in diversity is not jist a slogan in India but a way of life.</q></figcaption>
-    </figure>
-    <p>Highlights of India include:</p>
-    <ul>
-        <li><b>Architecture:</b> Majestic monument like the Taj Mahal and Red Fort.</li>
-        <li><b>Cuisine:</b> Diverse flavors from spicy curies to sweet dessets.</li>
-        <li><b>Culture:</b> Vibrant festival, classical dances, and colorful altire.</li>
-    </ul>
-    <h2>Famous Landmarks</h2>
-    <p>India is home to <mark>29 UNESCO World Heritage Sites</mark>,marking it a paradise for history and architecture enthusiasts.</p>
-    <ol>
-        <li>
+
+    <main class="main">
+
+        <header><h2 class="topic">About India</h2></header>
+        <section class="section">
+            <p>India is a land of incredible diversity. From the snow-capped peaks of the <em>Himalayas</em> to the serene backwaters of Kerala, every corner of India tells a unique story. India is the <strong>second-most populous coutry</strong> in the world and boasts a history spanning thousands of years. Its rich traditions have left an indelible mark on the world.</p>
             <figure>
-                <img src="https://www.travelandleisure.com/thmb/wdUcyBQyQ0wUVs4wLahp0iWgZhc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/taj-mahal-agra-india-TAJ0217-9eab8f20d11d4391901867ed1ce222b8.jpg" title="TAJ MAHAL" alt="Taj Mahal" width="300" height="200">
-                <figcaption>The Taj Mahal, a symbol of eteral love</figcaption>
+                <img src="https://t4.ftcdn.net/jpg/01/14/62/33/360_F_114623372_ZUIjiBqg3GGiTkkvFzAk4GJ0zpqliJE7.jpg" title="India" alt="Map of India" width="300" height="200"> 
+                <figcaption>India: A land of caltural and geographical diversity</figcaption><br>
+                <figcaption><q>Unity in diversity is not jist a slogan in India but a way of life.</q></figcaption>
             </figure>
-        </li>
-        <li>
+            <p>Highlights of India include:</p>
+            <ul>
+                <li><b>Architecture:</b> Majestic monument like the Taj Mahal and Red Fort.</li>
+                <li><b>Cuisine:</b> Diverse flavors from spicy curies to sweet dessets.</li>
+                <li><b>Culture:</b> Vibrant festival, classical dances, and colorful altire.</li>
+            </ul>
+        </section>
+
+        <header><h2 class="topic">Famous Landmarks</h2></header>
+        <section class="section">
+            <p>India is home to <mark>29 UNESCO World Heritage Sites</mark>,marking it a paradise for history and architecture enthusiasts.</p>
+            <ol>
+                <li>
+                    <figure>
+                        <img src="https://www.travelandleisure.com/thmb/wdUcyBQyQ0wUVs4wLahp0iWgZhc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/taj-mahal-agra-india-TAJ0217-9eab8f20d11d4391901867ed1ce222b8.jpg" title="TAJ MAHAL" alt="Taj Mahal" width="300" height="200">
+                        <figcaption>The Taj Mahal, a symbol of eteral love</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://media.gettyimages.com/id/165204592/photo/qutub-minar-delhi-india.jpg?s=612x612&w=gi&k=20&c=KxOGKa9Bs547e3lu_EbkNxxBppY3IW95uVvCAKZj5fE=" title="QUTUB MINAR" alt="Qutub Minar" width="300" height="200">
+                        <figcaption>The Qutub Minar, an architectural marvel Delhi</figcaption>
+                    </figure>
+                </li>
+            </ol>
+            <p><i>Don't miss exploring the intricate carvings, towering minarets, and breathtaking landscapes!</i></p>
+        </section>
+        
+        <header><h2 class="topic">Indian Culture</h2></header>
+        <section class="section">
+            <p>India's <b>cultural heritage</b>  is a blend of various traditions, languages, and religious. Each region has its unique identity and traditions that are celebrated throgh festivals and daily life. Here are some highlights:</p>
+            <ul>
+                <li><i>Classical Dances:</i> Bharatanatyam, Kathak and Odissi.</li>
+                <li><i>Music:</i> Traditional instruments like the sitar, tabla, and veena.</li>
+                <li><i>Festival:</i> Diwali, Holi, Eid, and Christmas bring people together in celebration.</li>
+            </ul>
             <figure>
-                <img src="https://media.gettyimages.com/id/165204592/photo/qutub-minar-delhi-india.jpg?s=612x612&w=gi&k=20&c=KxOGKa9Bs547e3lu_EbkNxxBppY3IW95uVvCAKZj5fE=" title="QUTUB MINAR" alt="Qutub Minar" width="300" height="200">
-                <figcaption>The Qutub Minar, an architectural marvel Delhi</figcaption>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Chhau_dance.jpg" title="CLASSICAL DANCE" alt="Indian Classical Dance" width="300" height="200">
+                <figcaption>A glimpse of Indian Classical Dance </figcaption>
             </figure>
-        </li>
-    </ol>
-    <p><i>Don't miss exploring the intricate carvings, towering minarets, and breathtaking landscapes!</i></p>
-    <h2>Indian Culture</h2>
-    <p>India's <b>cultural heritage</b>  is a blend of various traditions, languages, and religious. Each region has its unique identity and traditions that are celebrated throgh festivals and daily life. Here are some highlights:</p>
-    <ul>
-        <li><i>Classical Dances:</i> Bharatanatyam, Kathak and Odissi.</li>
-        <li><i>Music:</i> Traditional instruments like the sitar, tabla, and veena.</li>
-        <li><i>Festival:</i> Diwali, Holi, Eid, and Christmas bring people together in celebration.</li>
-    </ul>
-    <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Chhau_dance.jpg" title="CLASSICAL DANCE" alt="Indian Classical Dance" width="300" height="200">
-        <figcaption>A glimpse of Indian Classical Dance </figcaption>
-        <h2>Delicious Indian Cuisine</h2>
-        <p>Indian food is as diverse as its culture. From the fiery curries of the south toothe hearty bread of the north, there's something for everyone. Popular dishes include:</p>
-    </figure>
-    <ul>
-        <li><b>North Indian:</b> Butter chicken, naan, and paneer tikka.</li>
-        <li><b>South Indian:</b> Dosa, idli, and sambhar. </li>
-        <li><b>Street Food:</b> Pani puri, chaat, and vada pav.</li>
-    </ul>
-    <figure>
-        <img src="https://5.imimg.com/data5/ANDROID/Default/2021/6/HX/AM/DW/38411130/product-jpeg.jpeg" title="BIRYANI" alt="Hyderabad Biryani" width="300" height="200">
-        <figcaption>Delicious Hyderabadi Biryani</figcaption>
-        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi0WnsQwT27Us60W_DnHnQIuEIMEwtjmGtdIz85NrwgKY3d7lm" title="STREET FOOD" alt="Indian Street Food" width="300" height="200">
-        <figcaption>Colorful and Flavorful Indian steer food</figcaption>
-    </figure>
-    <footer>
-        <address><p><em>Contact us at <a href="">info@incredibleindia.com</a></em></i></p></address>
-        <p>&copycompny 2025 Incredible India Project. All right reserved.</p>
-        <p>Follow us on:<a href="">Facebook</a> | <a href="">Twitter</a></p>
+        </section>
+        
+        <header><h2 class="topic">Delicious Indian Cuisine</h2></header>
+        <section class="section">
+            <p>Indian food is as diverse as its culture. From the fiery curries of the south toothe hearty bread of the north, there's something for everyone. Popular dishes include:</p>
+            <ul>
+                <li><b>North Indian:</b> Butter chicken, naan, and paneer tikka.</li>
+                <li><b>South Indian:</b> Dosa, idli, and sambhar. </li>
+                <li><b>Street Food:</b> Pani puri, chaat, and vada pav.</li>
+            </ul>
+            <figure>
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2021/6/HX/AM/DW/38411130/product-jpeg.jpeg" title="BIRYANI" alt="Hyderabad Biryani" width="300" height="200">
+                <figcaption>Delicious Hyderabadi Biryani</figcaption>
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi0WnsQwT27Us60W_DnHnQIuEIMEwtjmGtdIz85NrwgKY3d7lm" title="STREET FOOD" alt="Indian Street Food" width="300" height="200">
+                <figcaption>Colorful and Flavorful Indian steer food</figcaption>
+            </figure>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <address><p><em>Contact us at <a href="">info@incredibleindia.com</a></em></i></span></address>
+        <span>&copycompny 2025 Incredible India Project. All right reserved.</span><br>
+        <span>Follow us on:<a href="">Facebook</a> | <a href="">Twitter</a></span>
     </footer>
 </body>
 </html>
