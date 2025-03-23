@@ -3,137 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About India</title>
+    <title>Incredible India</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <style>
-    body{
-        /* border: 1px solid;    */
+    body {
+        margin: 0;
         background-color: #fbe8e0;
-        padding: 0.2%; 
-        /* background-image: linear-gradient(orangered,white,green); */
+    }
+    .container {
+        font-family: 'Poppins', sans-serif;
+    }   
+
+    .main_header {
+        border: 1px solid;
+        text-align: center;
+        font-family: 'Josefin Slab', snan-serif;
+        margin-bottom: 5px;
+        /* animation-name: main_header;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-direction: normal;
+        position: relative; */
+    }
+    /* @keyframes main_header {
+        from {
+            top: 200px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            opacity: 1;
+        }
+    } */
+    .main_header h1 {
+        font-size: 42px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .main_header h3 {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
-    .container{
-        /* border: 1px solid; */
-        width: 99.2%;
-        margin: auto;
-        font-family: 'Poppins',sans-serif; 
-        padding: 0.3%;
-    }   
-    .main_header{
-        /* border: 1px solid red; */
-        text-align: center;
-        font-size: x-large;
-        font-family: 'Josefin Slab',snan-serif;
-        animation: main_header 3s ease-out normal;
-        position: relative;
-        /* z-index: -1; */
-    }
-    @keyframes main_header{
-        from{
-            opacity: 0;
-            top: 200px;
-          /* transform: scaleY(0); */
-        }
-        to{
-            top: 0px;
-        }
-    }
-    .topic{
-        /* border: 1px solid; */
-        color: orangered;
-        font-size: x-large;
-        font-family: 'Josefin Slab',snan-serif;
-        /* text-decoration: underline 2px; */
-    }
-    .section{
-        /* border: 1px solid; */
-        padding-left: 1%;
-        padding-right: 1%;
-        /* margin: auto; */
-    }
-    mark{
+    mark {
         background-color: brown;
         padding: 5px 10px;
         color: burlywood;
     }
-    .nav{
-        /* border: 1px solid red; */
-        height: 30px;
-        width: 99.8%;
-        background-color: #fbf5ef;
-        /* opacity: 1; */
-        padding: 0.5% 0;
-        margin: auto;
-        position: sticky;
-        top: 0;
-        animation: nav 2s ease-in 3s normal backwards;
-    }
-    @keyframes nav{
-        from{
-            opacity: 0;
-            top: 200px;
-        }
-        to{
-            top: 0px;
-        }
-    }
-    .nav ul{
-        /* border: 1px solid blue; */
-        height: 100%;
-        width: 96%;
-        margin: auto;
-        list-style-type: none;
-    }
-    .nav li{
-        height: 100%;
-        width: 8%;
-        /* border: 1px solid red; */
-        display: flex;
-        float: left;   
-        padding: auto;
-        margin: 0 80px;
-        /* margin: 0 5%; */
-        /* padding: 0.2% 2%; */
-    }
-    .navi{
-        /* border: 1px solid black; */
-        text-decoration: none;
-        /* text-align: center; */
-        /* width: 100%; */
-        /* background-color: #fbf5ef; */
-        /* margin-left: 170px; */
+
+    .topic {
+        color: orangered;
+        font-family: 'Josefin Slab', snan-serif;
     }
 
-    nav a:link{
+    .topic h2 {
+        font-size: 34px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .section {
+        padding: 0 1%;
+    }
+    hr {
+        margin: 5px 0;
+    }
+    .nav {
+        background-color: #fbf5ef;
+        height: 35px;
+        margin-bottom: 5px;
+        position: sticky;
+        top: 0px;
+    }
+    .navul {
+        height: 100%;
+        position: relative;
+    }
+    .nav ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 11%;
+    }
+    .navlist {
+        display: inline;
+        margin-left : 12.6%;
+    }
+    .navi {
+        text-decoration: none;
+    }
+    nav a:link {
         color: black;
     }
-    nav a:visited{
-        color: rgb(248, 151, 96);
+    nav a:visited {
+        color: black;
     }
-    nav a:hover{
-        font-size: 20px;
+    nav a:hover {
         color: orangered;
-        transition: 1s;
-        /* background-color:    ;  */
     }
-    
-    nav a:active{
+    nav a:active {
         color: green;
-    } 
-
-    .main{
-        /* border: 1px solid; */
-        position: relative;
-        animation: main 3s ease-in 3s normal backwards;
     }
-    @keyframes main{
+
+    .main {
+        /* position: relative; */
+        animation: main 1.5s ease-in 1s normal backwards;
+    }
+    /* @keyframes main{
         from{
             opacity: 0;
             top: 200px;
@@ -141,102 +129,108 @@
         to{
             top: 0px;
         }
-    }
+    }  */
 
-    .footer{
-        /* border: 1px solid red; */
+    .footer {
         text-align: center;
         color: white;
-        background-color: rgb(44, 38, 34) ;
-        opacity: 0.7;
+        background-color: black;
+        /* opacity: 0.7; */
         height: 150px;
         line-height: 2.5;
-        /* background-color: black; */
     }
-    footer a{
+
+    footer a {
         text-decoration: none;
     }
-    footer a:link{
+    footer a:link {
         color: black;
     }
-    footer a:visited{
-        color: rgb(248, 151, 96);
-        background-color: transparent;
+    footer a:visited {
+        color: rgb(233, 100, 100);
     }
-    footer a:hover{
-        /* font-size: 20px; */
-        color: rgb(255, 255, 0);
-        transition: 1s;
-        /* text-decoration: underline; */    
+    footer a:hover {
+        color: yellow;
     }
-    footer a:active{
+    footer a:active {
         color: green;
     }
 
-    /* figuree{ */
-        /* border: 1px  solid; */
-        /* text-align: center; */
-    /* }  */
-    img{
-        /* border: 1px solid; */
-        transition: transform 1s;
-    }
-    img:hover{
-        transform: scale(1.3);
-    }
-
-    @media (max-width: 600px){
-    .main_header{
-        border: 1px solid red;
+    /* figure {
         text-align: center;
-        /* font-size: x-large; */
-        font-family: 'Josefin Slab',snan-serif;
-        animation: main_header 3s ease-out normal;   
-        position: relative;
-        /* z-index: -1; */
-    }
-    
-    .main_header h1{
-        font-size: smaller;
-    }
+    } */
 
-        /* @keyframes main_header{
-            from{
-                opacity: 0;
-                top: 200px;
-            transform: scaleY(0);
-            }
-            to{
-                top: 0px;
-            }
-        } */
+    @media only screen and (max-width: 600px) {
+        body {
+            font-size: 10px;
+        }
+        .main_header h1 {
+            font-size: 30px;
+        }
+        .main_header h3 {
+            font-size: 15px;
+        }
+        .topic h2 {
+            font-size: 22px;
+        }
+        .nav {
+            height: 90px;
+        }
+        .navlist {
+            display: block;
+            margin-left : 2%;
+        }
+        .navi {
+            text-decoration: none;
+        }
+        .footer {
+            height: 95px;
+        }
+        img { 
+            height: 150px;
+            width: 250px;
+        }
+        figure {
+            text-align: center;
+        }
     }
-
 </style>
+
 <body>
+
     <div class="container">
+
         <header class="main_header">
             <h1>Welcome to <mark>Incredible India!</mark></h1>
             <h3><q>Discover the diversity, beauty, and rich heritags of India!</q></h3>
         </header>
-        
+
         <nav class="nav">
-            <ul>
-                <li><a class="navi" href="./index.html" target="_self"><b>Home</b></a></li>
-                <li><a class="navi" href="./Culture.html" target="_self"><i>Culture</i></a></li>
-                <li><a class="navi" href="./landmark.html" target="_self">Landmarks</a></li>
-                <li><a class="navi" href="./cuisine.html" target="_self">Cuisine</a></li>
-                <li><a class="navi" href="./Contact Us.html" target="_self">Contact Us</a></li>
-            </ul>
+            <div class="navul">
+                <ul>
+                    <li class="navlist"><a class="navi" href="./index.html" target="_self"><b>Home</b></a></li>
+                    <li class="navlist"><a class="navi" href="./Culture.html" target="_self"><i>Culture</i></a></li>
+                    <li class="navlist"><a class="navi" href="./landmark.html" target="_self">Landmarks</a></li>
+                    <li class="navlist"><a class="navi" href="./cuisine.html" target="_self">Cuisine</a></li>
+                    <li class="navlist"><a class="navi" href="./Contact Us.html" target="_self">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
 
         <main class="main">
 
             <section class="section">
-                <header class="topic"><h2>About India</h2></header>
-                <p>India is a land of incredible diversity. From the snow-capped peaks of the <em>Himalayas</em> to the serene backwaters of Kerala, every corner of India tells a unique story. India is the <strong>second-most populous coutry</strong> in the world and boasts a history spanning thousands of years. Its rich traditions have left an indelible mark on the world.</p>
+                <header class="topic">
+                    <h2>About India</h2>
+                </header>
+                <p>India is a land of incredible diversity. From the snow-capped peaks of the <em>Himalayas</em> to the
+                    serene backwaters of Kerala, every corner of India tells a unique story. India is the
+                    <strong>second-most populous coutry</strong> in the world and boasts a history spanning thousands of
+                    years. Its rich traditions have left an indelible mark on the world.</p>
                 <figure>
-                    <img class="imgs" src="https://t4.ftcdn.net/jpg/01/14/62/33/360_F_114623372_ZUIjiBqg3GGiTkkvFzAk4GJ0zpqliJE7.jpg" title="India" alt="Map of India" width="300" height="200"> 
+                    <img class="imgs"
+                        src="https://t4.ftcdn.net/jpg/01/14/62/33/360_F_114623372_ZUIjiBqg3GGiTkkvFzAk4GJ0zpqliJE7.jpg"
+                        title="India" alt="Map of India" width="300" height="200">
                     <figcaption>India: A land of caltural and geographical diversity</figcaption><br>
                     <figcaption><q>Unity in diversity is not jist a slogan in India but a way of life.</q></figcaption>
                 </figure>
@@ -247,65 +241,87 @@
                     <li><b>Culture:</b> Vibrant festival, classical dances, and colorful altire.</li>
                 </ul>
             </section>
-
+            <hr>
             <section class="section">
-                <header class="topic"><h2>Famous Landmarks</h2></header>
-                <p>India is home to <mark>29 UNESCO World Heritage Sites</mark>,marking it a paradise for history and architecture enthusiasts.</p>
+                <header class="topic">
+                    <h2>Famous Landmarks</h2>
+                </header>
+                <p>India is home to <mark>29 UNESCO World Heritage Sites</mark>,marking it a paradise for history and
+                    architecture enthusiasts.</p>
                 <ol>
                     <li>
                         <figure>
-                            <img class="imgs" src="https://www.travelandleisure.com/thmb/wdUcyBQyQ0wUVs4wLahp0iWgZhc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/taj-mahal-agra-india-TAJ0217-9eab8f20d11d4391901867ed1ce222b8.jpg" title="TAJ MAHAL" alt="Taj Mahal" width="300" height="200">
+                            <img class="imgs"
+                                src="https://www.travelandleisure.com/thmb/wdUcyBQyQ0wUVs4wLahp0iWgZhc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/taj-mahal-agra-india-TAJ0217-9eab8f20d11d4391901867ed1ce222b8.jpg"
+                                title="TAJ MAHAL" alt="Taj Mahal" width="300" height="200">
                             <figcaption>The Taj Mahal, a symbol of eteral love</figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img class="imgs" src="https://media.gettyimages.com/id/165204592/photo/qutub-minar-delhi-india.jpg?s=612x612&w=gi&k=20&c=KxOGKa9Bs547e3lu_EbkNxxBppY3IW95uVvCAKZj5fE=" title="QUTUB MINAR" alt="Qutub Minar" width="300" height="200">
+                            <img class="imgs"
+                                src="https://media.gettyimages.com/id/165204592/photo/qutub-minar-delhi-india.jpg?s=612x612&w=gi&k=20&c=KxOGKa9Bs547e3lu_EbkNxxBppY3IW95uVvCAKZj5fE="
+                                title="QUTUB MINAR" alt="Qutub Minar" width="300" height="200">
                             <figcaption>The Qutub Minar, an architectural marvel Delhi</figcaption>
                         </figure>
                     </li>
                 </ol>
-                <p><i>Don't miss exploring the intricate carvings, towering minarets, and breathtaking landscapes!</i></p>
+                <p><i>Don't miss exploring the intricate carvings, towering minarets, and breathtaking landscapes!</i>
+                </p>
             </section>
-
+            <hr>
             <section class="section">
-                <header class="topic"><h2>Indian Culture</h2></header>
-                <p>India's <b>cultural heritage</b>  is a blend of various traditions, languages, and religious. Each region has its unique identity and traditions that are celebrated throgh festivals and daily life. Here are some highlights:</p>
+                <header class="topic">
+                    <h2>Indian Culture</h2>
+                </header>
+                <p>India's <b>cultural heritage</b> is a blend of various traditions, languages, and religious. Each
+                    region has its unique identity and traditions that are celebrated throgh festivals and daily life.
+                    Here are some highlights:</p>
                 <ul>
                     <li><i>Classical Dances:</i> Bharatanatyam, Kathak and Odissi.</li>
                     <li><i>Music:</i> Traditional instruments like the sitar, tabla, and veena.</li>
                     <li><i>Festival:</i> Diwali, Holi, Eid, and Christmas bring people together in celebration.</li>
                 </ul>
                 <figure>
-                    <img class="imgs" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Chhau_dance.jpg" title="CLASSICAL DANCE" alt="Indian Classical Dance" width="300" height="200">
+                    <img class="imgs" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Chhau_dance.jpg"
+                        title="CLASSICAL DANCE" alt="Indian Classical Dance" width="300" height="200">
                     <figcaption>A glimpse of Indian Classical Dance </figcaption>
                 </figure>
             </section>
-
+            <hr>
             <section class="section">
-                <header class="topic"><h2>Delicious Indian Cuisine</h2></header>
-                <p>Indian food is as diverse as its culture. From the fiery curries of the south toothe hearty bread of the north, there's something for everyone. Popular dishes include:</p>
+                <header class="topic">
+                    <h2>Delicious Indian Cuisine</h2>
+                </header>
+                <p>Indian food is as diverse as its culture. From the fiery curries of the south toothe hearty bread of
+                    the north, there's something for everyone. Popular dishes include:</p>
                 <ul>
                     <li><b>North Indian:</b> Butter chicken, naan, and paneer tikka.</li>
                     <li><b>South Indian:</b> Dosa, idli, and sambhar. </li>
                     <li><b>Street Food:</b> Pani puri, chaat, and vada pav.</li>
                 </ul>
                 <figure>
-                    <img class="imgs" src="https://5.imimg.com/data5/ANDROID/Default/2021/6/HX/AM/DW/38411130/product-jpeg.jpeg" title="BIRYANI" alt="Hyderabad Biryani" width="300" height="200">
+                    <img class="imgs"
+                        src="https://5.imimg.com/data5/ANDROID/Default/2021/6/HX/AM/DW/38411130/product-jpeg.jpeg"
+                        title="BIRYANI" alt="Hyderabad Biryani" width="300" height="200">
                     <figcaption>Delicious Hyderabadi Biryani</figcaption>
-                    <img class="imgs" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi0WnsQwT27Us60W_DnHnQIuEIMEwtjmGtdIz85NrwgKY3d7lm" title="STREET FOOD" alt="Indian Street Food" width="300" height="200">
+                    <img class="imgs"
+                        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi0WnsQwT27Us60W_DnHnQIuEIMEwtjmGtdIz85NrwgKY3d7lm"
+                        title="STREET FOOD" alt="Indian Street Food" width="300" height="200">
                     <figcaption>Colorful and Flavorful Indian steer food</figcaption>
                 </figure>
             </section>
-            
+
         </main>
 
         <footer class="footer">
-            <address><p><em>Contact us at <a href="">info@incredibleindia.com</a></em></i></span></address>
+            <address>
+                <p><em>Contact us at <a href="">info@incredibleindia.com</a></em></i></span>
+            </address>
             <span>&copycompny 2025 Incredible India Project. All right reserved.</span><br>
             <span>Follow us on:<a href=""> Facebook</a> | <a href="">Twitter</a></span>
         </footer>
-</div>
-    
+    </div>
+
 </body>
 </html>
